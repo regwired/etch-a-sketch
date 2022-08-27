@@ -5,8 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Etch A Sketch</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <main class="container">
+    <h1>Etch A Sketch</h1>
+    <div class="grid"></div>
+    <div class="option-container">
+      <div class="option">
+        <label id="size-label">16 x 16</label>
+        <input type="range" id="size-input" value="16" min="16" max="32">
+      </div>
+      <div class="option">
+        <input type="color" id="color-input">
+      </div>
+      <input id="clear-input" type="image" src="assets/bin.svg"></input>
+      <input class="off" id="rainbow-input" type="image" src="assets/rainbow.svg"></input>
+    </div>
+  </main>
 </body>
 </html>
